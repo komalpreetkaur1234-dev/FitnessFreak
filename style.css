@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpeg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Align Navigation to the Right */
+nav {
+    margin-right: 20px;
+}
+
+/* Centered Welcome Message */
+/* Centered Welcome Message with Transparent Background */
+.welcome {
+    text-align: center;
+    margin-top: 20vh;
+    background: rgba(0, 0, 0, 0); /* Fully transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* Ensure text is readable */
+}
+
+.welcome p {
+    font-size: 20px;
+    font-style: italic;
+    color: white; /* Keep text visible on any background */
+}
